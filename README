@@ -1,0 +1,28 @@
+Input the puzzle grid and cage equations
+
+0 0 1 2 2 3
+0 4 4 5 5 3
+6 7 8 8 9 9
+6 6 10 10 11 11
+12 13 13 14 14 15
+16 16 13 14 17 15
+80* 3 5- 2/ 11+ 1- 9* 2 3- 30* 11+ 2/ 6 8* 13+ 8+ 10* 1
+
+The first six lines describe the cage shapes. All cells assigned the same number share a common cage.
+
+The seventh line contains the cage labels. Which cage a label belongs to depends on its index in the line. 
+So, 80∗ is the condition for cage 0, while 6 is the label upon cage 12. A label will always be a number, 
+followed optionally by an operator symbol.
+
+You should print your solution to standard out, as follows:
+
+5 4 3 1 6 2
+4 6 5 2 3 1
+3 2 1 4 5 6
+1 3 6 5 2 4
+6 1 2 3 4 5
+2 5 4 6 1 3
+
+Each row must be on a line by itself. Each number is to be separated from the next by a single space.
+
+If a puzzle is unsolvable, you should output No solution.
